@@ -46,7 +46,7 @@ Author: Christian Pauly
 						var group = [];
 						for ( var i = 0; i < xml.children.length; i++ ) {
 							if ( xml.children[i].tagName == tagName ) {
-								group.push ( jsonize ( xml.children[i] ) );
+								group.push ( this.jsonize ( xml.children[i] ) );
 							}
 
 						}
@@ -54,7 +54,7 @@ Author: Christian Pauly
 
 					}
 					else {
-						var attrlist = jsonize ( xml.children[ c ] );
+						var attrlist = this.jsonize ( xml.children[ c ] );
 						for ( var attr in attrlist ) {
 							var newTagName = tagName + "_" + attr;
 							while ( newTagName in jsonOutput ) {
