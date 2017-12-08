@@ -1,4 +1,4 @@
-#Xform
+# Xform
 
 This is an unofficial Strophe.js plugin to help you working with xforms. You can convert xml forms to html forms and back. Also you can transfer any xml document into json with the function **jsonize**.
 
